@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display Webcam Stream</title>
+ 
+<style>
+#container {
+	margin: 50px auto;
+	width: 65.88579795021963vw;
+	height: 61.576354679802954vh;
+	border: 10px #333 solid;
+}
+#videoElement {
+	width: 65.88579795021963vw;
+	height: 61.576354679802954vh;
+	background-color: #666;
+}
+.startBtn{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background-color: grey;
+
+
+}
+
+.stopBtn{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background-color: grey;
+}
+.stopBtn:hover{
+    background-color: aliceblue;
+}
+.startBtn:hover{
+    background-color: aliceblue;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+</style>
+</head>
+ 
+<body>
+<div id="container">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+</div>
+<div class="btn">
+    <button onclick="start()" class="startBtn">
+        start
+    </button>
+    <button onclick="stop()" class="stopBtn">
+        Stop
+    </button>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
