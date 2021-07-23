@@ -3,7 +3,7 @@ var video = document.querySelector("#videoElement");
 
 function start(e){
 if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: { width: 480, framerate: 15 }})
+  navigator.mediaDevices.getUserMedia({ video: { width: 480, height:600, framerate: 15 }})
     .then(function (stream) {
       video.srcObject = stream;
     })
